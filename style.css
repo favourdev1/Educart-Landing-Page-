@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-Medium.ttf');
+}
+:root {
+    --blue-bg: #17324F;
+    --light-text: #DBEBEE;
+    --bg-light-blue: #E9EDF1;
+    --light-blue: #6B7280;
+    --navlink-text: #20466F;
+    --body-background: #ECF2FE;
+
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    background-color: var(--body-background) !important;
+}
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1 !important;
+}
+
+
+.bg-blue {
+    background-color: var(--blue-bg) !important;
+}
+
+.text-light {
+    color: var(--light-text) !important;
+}
+.text-blue {
+    color: #1D4065;
+}
+
+.text-dark-blue {
+    color: #12273D;
+}
+
+.text-light-blue {
+    color: var(--light-blue);
+}
+.bg-light-blue {
+    background-color: var(--bg-light-blue);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.vh-70 {
+    height: 85vh;
+}
+
+
+/* *****************NAVLINKS ******************** */
+.text-blue-2 {
+    color: var(--navlink-text);
+}
+.nav-login:hover {
+    background: #50648a!important;
+    /* border: none !important; */
+    color: white !important;
+}
+.nav-signup:hover {
+    background: #50648a!important;
+    
+    color: white !important;
+}
+
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--blue-bg);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--blue-bg);
+    transition: width 0.2s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.hero-background {
+    background-image: url('img/home-background.png');
+    background-position: -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero {
+
+
+    top: 0;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(231, 227, 224, 0.824) 0.51%, rgba(231, 227, 224, 0.749)74%, rgba(231, 227, 224, 0.01) 101.57%);
+
+
+}
+
+.big-hero-text {
+    font-size: 40px;
+}
+
+.bg-orange {
+    background: #C77400 !important;
+}
+
+.w-min-content {
+    width: min-content;
+}
+
+
+.w-max-content {
+    width: max-content;
+}
+.w-max-89 {
+    max-width: 80% !important;
+}
+
+.button-click {
+    width: 100%;
+
+}
+
+.lh-42 {
+    line-height: 42px;
+}
+
+
+.footer-header-text {
+    color: #8A8B8B;
+}
+
+.footer-offset-text {
+    color: #12273D;
+    top: 5%;
+    right: 0;
+    width: fit-content;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+textarea:focus,
+select,
+select:focus,
+textarea.form-control:focus,
+.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus option,
+option:focus {
+    box-shadow: inset 0 -1px 0 #dddddd00 !important;
+    border: 1px solid #D8DDE3 !important;
+}
+
+input::placeholder {
+    color: #D8DDE3 !important;
+
+}
+
+.carousel-item-style {
+    border: 2px solid #D0D0D0;
+    border-radius: 40px;
+    background: linear-gradient(0deg, #98AABD, #98AABD);
+}
+
+@media(min-width: 768px) {
+   
+    .big-hero-text {
+        font-size: 64px;
+    }
+    
+    .button-click {
+        width: fit-content;
+    }
+
+    .hero-background {
+        background-image: url('img/home-background.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .footer-offset-text {
+
+        top: 5%;
+        right: 5%;
+        font-size: 40px;
+
+    }
+
+
+}
+
+
+
+@media(min-width: 991px) {
+    .hero {
+
+    
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(231, 227, 224, 0.99) 0.51%, rgba(231, 227, 224, 0.939)74%, rgba(231, 227, 224, 0.01) 101.57%);
+
+
+    }
+
+}

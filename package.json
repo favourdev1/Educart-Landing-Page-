@@ -1,0 +1,26 @@
+{
+  "name": "educart",
+  "version": "1.0.0",
+  "description": "Simple ui for the educart landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favourdev1/educart-Landing-page.git"
+  },
+  "author": "Hackcity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/favourdev1/educart-Landing-page/issues"
+  },
+  "homepage": "https://github.com/favourdev1/educart-Landing-page#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "boxicons": "^2.1.4",
+    "jquery": "^3.6.4",
+    "owl-carousel": "^1.0.0"
+  }
+}
