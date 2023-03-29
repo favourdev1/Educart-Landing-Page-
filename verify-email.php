@@ -62,11 +62,6 @@ Please Input the code below
     </div>
 
     <?php include_once("include/footer.inc.html"); ?>
-
-
-
-
-        <!-- *************** BOOTSTRAP LIBRARY ********************** -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
